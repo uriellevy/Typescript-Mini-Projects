@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopWatchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 204, 204);
+    padding: 30px;
+    border-radius: 10px;
+
+
+    .stopWatchDisplayWrapper {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .btnsWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        .btn {
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 10px;
+            background-color: rgb(50, 131, 131);
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+    }
+}
+
