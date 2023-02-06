@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #77a8a8;
+}
+
+.gameContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameContainer .headerWrapper {
+  width: 100%;
+  background: linear-gradient(#77a8a8, #2c5858);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.gameContainer .headerWrapper .rgbColor {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.gameContainer .toolsBarWrapper {
+  width: 100%;
+  background: linear-gradient(to top, #77a8a8, #2c5858);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.gameContainer .toolsBarWrapper .btn {
+  border: 2px #2c5858 solid;
+  color: #2c5858;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.gameContainer .toolsBarWrapper .btn:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #2c5858;
+  cursor: pointer;
+}
+.gameContainer .colorsWrapper {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gameContainer .colorsWrapper .color {
+  width: 100px;
+  height: 100px;
+  border: 2px #fff solid;
+  margin: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.gameContainer .colorsWrapper .color:hover {
+  border-color: #999;
+}
+
+/*# sourceMappingURL=colorsGame.css.map */

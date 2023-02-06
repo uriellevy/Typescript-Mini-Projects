@@ -232,7 +232,3 @@ deleteButton?.addEventListener('click', () => {
     onDelete();
     onUpdateDisplay();
 });
-
-
-
-
