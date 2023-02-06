@@ -135,10 +135,14 @@ function onDelete() {
     currentNumber = currentNumber.slice(0, -1);
 }
 function onUpdateDisplay() {
-    currentOperandTextElement.innerHTML = currentNumber;
-    previousOperandTextElement.innerHTML = `${previousNumber + operation}`;
+    currentOperandTextElement.innerHTML = displayFormat(currentNumber);
+    previousOperandTextElement.innerHTML = `${displayFormat(previousNumber) + operation}`;
 }
 ;
+function displayFormat(num) {
+    const number = +num;
+    return new Intl.NumberFormat().format(number);
+}
 function onAppendNumber(num) {
     if (num === "." && currentNumber.includes("."))
         return;

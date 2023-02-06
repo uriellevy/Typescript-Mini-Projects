@@ -154,9 +154,14 @@ function onDelete() {
 }
 
 function onUpdateDisplay() {
-    currentOperandTextElement.innerHTML = currentNumber;
-    previousOperandTextElement.innerHTML = `${previousNumber + operation}`;
+    currentOperandTextElement.innerHTML = displayFormat(currentNumber);
+    previousOperandTextElement.innerHTML = `${displayFormat(previousNumber) + operation}`;
 };
+
+function displayFormat(num:string) {
+    const number = +num;
+    return new Intl.NumberFormat().format(number);
+}
 
 function onAppendNumber(num: string) {
     if (num === "." && currentNumber.includes(".")) return;
