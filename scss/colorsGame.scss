@@ -33,6 +33,12 @@ body {
             font-weight: 600;
             font-size: 20px;
         }
+
+        .lives {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.801);
+            font-size: 20px;
+        }
     }
 
     .toolsBarWrapper {
@@ -74,8 +80,16 @@ body {
             border-radius: 20px;
             transition: all 0.3s ease;
             cursor: pointer;
+            display: flex;
             &:hover {
                 border-color: #999;
+            }
+            &.currect {
+                border-color: #4BB543;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-weight: 600;
             }
         }
     }

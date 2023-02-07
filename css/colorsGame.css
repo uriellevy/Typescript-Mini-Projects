@@ -35,6 +35,11 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+.gameContainer .headerWrapper .lives {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 20px;
+}
 .gameContainer .toolsBarWrapper {
   width: 100%;
   background: linear-gradient(to top, #77a8a8, #2c5858);
@@ -71,9 +76,17 @@ body {
   border-radius: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
+  display: flex;
 }
 .gameContainer .colorsWrapper .color:hover {
   border-color: #999;
+}
+.gameContainer .colorsWrapper .color.currect {
+  border-color: #4BB543;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=colorsGame.css.map */
