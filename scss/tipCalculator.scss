@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #444;
+    --input-color: #DDDDDD;
+    --container-background:#f4f4f4;
+    --range-input-color: #001f3f;
+    --font-s:16px;
+    --font-m:20px;
+    --font-l:24px;
+    --font-normal: 300;
+    --font-bold: 600;
+    --font-very-bold: 900;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipCalculatorContainer {
+    width: 80%;
+    background-color: var(--container-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tipMainTitle {
+        margin: 20px 0;
+    }
+
+    .addNumberInputWrapper {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        input {
+            background-color: transparent;
+            font-size: 20px;
+            padding: 5px;
+            width: 100%;
+        }
+    }
+
+    .rangeInputWrapper {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .rangeTitle {
+            font-size: var(--font-s);
+            font-weight: var(--font-bold);
+            margin-right: 4px;
+        }
+
+        .rangeInput {
+            width: 100%;
+            color: #777;
+            overflow: hidden;
+            -webkit-appearance: none;
+            background-color: var(--range-input-color);
+            border-radius: --border-radius;
+        }
+
+        .percentage {
+            font-weight: var(--font-bold);
+            margin-left: 4px;
+        }
+    }
+    .separator {
+        width: 80%;
+        height: 3px;
+        background-color: var(--background-color);
+        margin: 25px 0;
+    }
+
+    .resultsWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .resultsTitle {
+            margin-bottom: 10px;
+        }
+        .tipAmountWrapper {
+            width: 80%;
+            background-color: var(--input-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+
+            .amountTitle {
+                padding-right: 20px;
+                height: 100%;
+                border-right: 2px solid var(--background-color);
+            }
+            .amountNumber {
+                margin-right: 20px;
+            }
+        }
+
+        .totalAmountWrapper {
+            width: 80%;
+            background-color: var(--input-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+
+            .totalAmountTitle {
+                padding-right: 20px;
+                height: 100%;
+                border-right: 2px solid var(--background-color);
+
+            }
+            .totalAmountNumber {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+
+
