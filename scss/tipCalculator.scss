@@ -9,6 +9,7 @@
     --input-color: #DDDDDD;
     --container-background:#f4f4f4;
     --range-input-color: #001f3f;
+    --bill-input:rgba(216, 170, 19, 0.692);
     --font-s:16px;
     --font-m:20px;
     --font-l:24px;
@@ -27,7 +28,7 @@ body {
 }
 
 .tipCalculatorContainer {
-    width: 80%;
+    width: 350px;
     background-color: var(--container-background);
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@ body {
             font-size: 20px;
             padding: 5px;
             width: 100%;
+            border-color: var(--bill-input);
         }
     }
 
@@ -107,9 +109,6 @@ body {
                 height: 100%;
                 border-right: 2px solid var(--background-color);
             }
-            .amountNumber {
-                margin-right: 20px;
-            }
         }
 
         .totalAmountWrapper {
@@ -119,6 +118,7 @@ body {
             justify-content: space-between;
             padding: 10px 20px;
             margin-bottom: 30px;
+            align-items: center;
 
             .totalAmountTitle {
                 padding-right: 20px;
@@ -126,8 +126,9 @@ body {
                 border-right: 2px solid var(--background-color);
 
             }
+
             .totalAmountNumber {
-                margin-right: 20px;
+                padding-left: 7px;
             }
         }
     }
