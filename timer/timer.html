@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/timer.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timerContainer">
+        <div class="timerInputWrapper">
+            <input class="inp minutes" type="number" max="59" value="0">
+            <input class="inp seconds" type="number" max="59" value="0">
+            <input class="btn submit" type="submit" value="Set Timer">
+        </div>
+        <div class="timerWrapper">
+            <button class="btn">Play</button>
+            <button class="btn">Reset</button>
+            <button class="btn">Pause</button>
+        </div>
+        <div class="timerDisplay">00:00</div>
+    </div>
+    <script src="./timer.js"></script>
+</body>
+</html>

@@ -5,7 +5,16 @@ window.onload = () => {
     setClock();
 }
 
-const setClock = () => {//manual way
+//easy way
+// const setClock = () => {
+//     interval = setInterval(() => {
+//         const date = new Date().toLocaleTimeString()
+//         clock.innerHTML = date;
+//     },1000)
+// }
+
+//manual way
+const setClock = () => {
     interval = setInterval(() => {
         const date = new Date();
         const hh = date.getHours();

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-main: linear-gradient(#EB5757, #000000);
+  --background-secondary: #00000081;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerContainer {
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.timerContainer .timerInputWrapper {
+  display: flex;
+  margin: 20px 0;
+}
+.timerContainer .timerInputWrapper .inp {
+  width: 40px;
+  height: 25px;
+  margin-right: 5px;
+  color: #fff;
+  background-color: var(--background-main);
+  border: 2px #fff solid;
+  border-radius: 5px;
+  text-align: center;
+}
+.timerContainer .timerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timerContainer .timerDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.timerContainer .btn {
+  background-color: var(--background-main);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.timerContainer .btn:hover {
+  background-color: #fff;
+  color: var(--background-main);
+}
+
+/*# sourceMappingURL=timer.css.map */
