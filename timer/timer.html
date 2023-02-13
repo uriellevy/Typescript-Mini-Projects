@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="timerContainer">
-        <div class="timerInputWrapper">
+        <form class="timerInputWrapper" id="timerInputWrapper">
             <input class="inp minutes" type="number" max="59" value="0">
             <input class="inp seconds" type="number" max="59" value="0">
-            <input class="btn submit" type="submit" value="Set Timer">
-        </div>
+            <button class="btn submit">Set Timer</button>
+        </form>
         <div class="timerWrapper">
-            <button class="btn">Play</button>
-            <button class="btn">Reset</button>
-            <button class="btn">Pause</button>
+            <button class="btn play">Play</button>
+            <button class="btn reset">Reset</button>
+            <button class="btn pause">Pause</button>
         </div>
         <div class="timerDisplay">00:00</div>
     </div>

@@ -7,6 +7,7 @@
 :root {
     --background-main: linear-gradient(#EB5757, #000000);
     --background-secondary: #00000081;
+    --btn-color: #7a1c1c;
 
 }
 
@@ -32,6 +33,7 @@ body {
 
     .timerInputWrapper {
         display: flex;
+        align-items: center;
         margin: 20px 0;
 
         .inp {
@@ -68,11 +70,12 @@ body {
         color: #fff;
         padding: 5px 10px;
         margin-right: 8px;
+        font-weight: bold;
         transition: all 0.3s ease;
         cursor: pointer;
         &:hover {
             background-color: #fff;
-            color: var(--background-main);
+            color: var(--btn-color);
         }
     }
 }
