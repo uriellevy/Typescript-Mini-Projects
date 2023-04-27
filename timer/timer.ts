@@ -52,9 +52,6 @@ const delay = (duration: number) => {
 }
 
 
-
-
-
 function onSetTimer(minutes: number, seconds: number) {
     if (minutes < 0 || seconds < 0) return;
     clearInterval(timerInterval);

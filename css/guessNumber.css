@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  width: 300px;
+  grid-gap: 10px;
+}
+.container > * {
+  font-weight: 600;
+}
+.container button {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  outline: none;
+}
+.container button:hover {
+  background-color: #000;
+  color: #f4f4f4;
+}
+.container .disabled {
+  pointer-events: none;
+  background-color: #999;
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=guessNumber.css.map */
