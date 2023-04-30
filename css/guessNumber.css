@@ -32,11 +32,9 @@ body {
   background-color: #000;
   color: #f4f4f4;
 }
-.container .disabled {
-  pointer-events: none;
+.container button:disabled {
+  cursor: not-allowed;
   background-color: #999;
-  outline: none;
-  border: none;
 }
 
 /*# sourceMappingURL=guessNumber.css.map */
